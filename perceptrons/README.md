@@ -5,10 +5,10 @@
 - Two features - sepal length & petal length only.
 
 ## Installation
-'''bash
+```bash
 git clone https://github.com/kagehisa4/Neural_Networks
 cd perceptrons
 python train.py
 python model.py
 
-'''
+```
