@@ -12,3 +12,8 @@ python train.py
 python model.py
 
 ```
+
+
+words: 
+
+['refund', 'document', 'invitation', 'unlocked', 'report', 'assignment', 'prize', 'best', 'Tomorrow', 'unlock', 'Hurry', 'reminder', 'required', 
