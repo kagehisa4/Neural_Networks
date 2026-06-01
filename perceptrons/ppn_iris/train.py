@@ -2,11 +2,11 @@ from ppn import Perceptron
 import reader
 import pickle
 
-ppn_ = Perceptron(1, 15)
+ppn = Perceptron(.01, 10)
 
 
-ppn_.fit(reader.X,reader.y)
+ppn.fit(reader.X,reader.y)
 
 #Save
 with open("ppn.pkl", "wb") as f:
-    pickle.dump(ppn_,f)
+    pickle.dump(ppn,f)
