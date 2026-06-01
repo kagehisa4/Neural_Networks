@@ -1,6 +1,7 @@
 import pickle
 import matplotlib.pyplot as plt
-# load model
+from decision_region import plot_decision_regions
+import reader
 
 with open("ppn.pkl", "rb") as f:
     ppn = pickle.load(f)
@@ -15,8 +16,8 @@ output = ppn.predict([sl,pl])
 print('Iris-serosa') if output == 1 else print('Iris-versicolor')'''
 
 #print errors from the list:
-print(ppn.lg_rate)
-plt.plot(range(1, len(ppn.errors_) + 1) , ppn.errors_ , marker = 'o', color = 'blue')
-plt.xlabel('epoch number')
-plt.ylabel('Misclassifications')
+plot_decision_regions(reader.X, reader.y, classifier = ppn)
+plt.xlabel('sepal length (cm)')
+plt.ylabel('petal length (cm)')
+plt.legend(loc = 'upper left')
 plt.show()
