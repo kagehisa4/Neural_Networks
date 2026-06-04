@@ -15,7 +15,7 @@ To modify the classes- EDIT reader.py to change input/output features. The instr
 
 ## IMAGES ARE SHOWN FOR ALL COMBINATIONS ON THE IRIS DATASET.
 
-1. ![](scatter_plots/sepal_length_class.png)
+1. ![SEPAL LENGTH COMBINATIONS](scatter_plots/sepal_length_class.png)
       - this shows all combinations of INPUT with the SEPAL-LENGTH feature.
       - the perceptron can be trained only on the LINEAR SEPARABLE features.
       - notice the first image at top-left, we trained our perceptron on this.
@@ -24,8 +24,8 @@ To modify the classes- EDIT reader.py to change input/output features. The instr
       - this is decision boundary on which perceptron is trained.
       - refer to the code to know how to plot them.
 
-3. ![](scatter_plots/sepal_width_class.png)
+3. ![SEPAL WIDTH COMBINATIONS](scatter_plots/sepal_width_class.png)
       - this shows all combinations of INPUT with the SEPAL-WIDTH feature.
 
-4. ![](scatter_plots/petal_length_class.png)
+4. ![PETAL LENGTH COMBINATIONS](scatter_plots/petal_length_class.png)
       - this shows all combinations of INPUT with the PETAL-LENGTH feature.

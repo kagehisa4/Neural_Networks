@@ -1,0 +1,4 @@
+PYTHON IDE (ANY) TO EDIT CODE
+numpy
+pandas
+matlplotlib
