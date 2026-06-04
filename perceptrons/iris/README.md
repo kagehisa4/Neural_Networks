@@ -26,10 +26,10 @@ To modify the classes- EDIT reader.py to change input/output features. The instr
       - refer to the code to know how to plot them.
 - ![decision region](scatter_plots/decision_boudaries.png)
 
-3. DECISION BOUNDARY
+3. SEPAL WIDTH COMBINATIONS
       - this shows all combinations of INPUT with the SEPAL-WIDTH feature.
 - ![SEPAL WIDTH COMBINATIONS](scatter_plots/sepal_width_class.png)
 
-4.  DECISION BOUNDARY
+4. PETAL LENGTH COMBINATIONS
       - this shows all combinations of INPUT with the PETAL-LENGTH feature.
 - ![PETAL LENGTH COMBINATIONS](scatter_plots/petal_length_class.png)
