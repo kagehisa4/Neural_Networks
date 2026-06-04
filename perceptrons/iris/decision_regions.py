@@ -11,14 +11,27 @@ def plot_decision_regions(X,y,classifier,resolution=.02):
 
     # create grid
 
-    x,y = np.meshgrid(np.arange(x_min, x_max, resolution), np.arange(y_min, y_max, resolution))
+    xsl,ysl = np.meshgrid(np.arange(x_min -1, x_max +1, resolution), np.arange(y_min - 1, y_max +1, resolution))
 
     # create values at the grid:
 
-    z = classifier.predict(np.array([x.ravel(), y.ravel()]).T)
-    z = z.reshape(x.shape)
+    z = classifier.predict(np.array([xsl.ravel(), ysl.ravel()]).T)
+    z = z.reshape(xsl.shape)
     # create colormamp
 
-    cmap = ListedColormap(('blue', 'green'))
+    cmap = ListedColormap(('red', 'green'))
 
-    plt.contourf(x,y,z,cmap=cmap)
+    plt.contourf(xsl,ysl,z,cmap=cmap, alpha = .4)
+
+    # plot scatter
+
+    marker = ['x', 'o']
+    for idx, vl in enumerate(np.unique(y)):
+
+        plt.scatter(
+
+        X[y==vl,0], X[y==vl,1], # array masking
+        c = cmap(idx), alpha = .8, marker = marker[idx],
+        label = vl
+
+        )
