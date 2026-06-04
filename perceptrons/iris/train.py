@@ -2,7 +2,7 @@ from ppn import Perceptron
 import reader
 import pickle
 
-ppn = Perceptron(.01, 10)
+ppn = Perceptron(lg_rate = .01, n_iter = 10)
 
 
 ppn.fit(reader.X,reader.y)
