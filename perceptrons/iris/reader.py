@@ -20,11 +20,11 @@ y = []
 x = []
 for i in range(100):
     lst = []
-    if df.iloc[i,4] != 'Iris-setosa':
+    if df.iloc[i,4] != 'Iris-setosa': # EDIT TO CHANGE FEATURE CLASS
         y.append(-1)
     else:
         y.append(1)
-    x.append(df.iloc[i, [0,2]])
+    x.append(df.iloc[i, [0,2]]) # EDIT [0,2] TO CHANGE INPUT FEATURE
 
 X = np.array(x)
 X = X.reshape(100,2)
