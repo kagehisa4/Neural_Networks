@@ -20,7 +20,7 @@ To modify the classes- EDIT reader.py to change input/output features. The instr
       - the perceptron can be trained only on the LINEAR SEPARABLE features.
       - notice the first image at top-left, we trained our perceptron on this.
 
-2. ![decision region](scatter_plots/decision_boundaries.png)
+2. ![decision region](scatter_plots/decision_boudaries.png)
       - this is decision boundary on which perceptron is trained.
       - refer to the code to know how to plot them.
 
