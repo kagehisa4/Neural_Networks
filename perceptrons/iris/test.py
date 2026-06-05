@@ -1,6 +1,6 @@
 import pickle
 import matplotlib.pyplot as plt
-from drs import plot_decision_regions
+from decision_regions import plot_decision_regions
 import reader
 
 with open("ppn.pkl", "rb") as f:
