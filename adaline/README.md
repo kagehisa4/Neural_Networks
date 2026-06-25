@@ -1,13 +1,12 @@
-# IRIS DATASET - Perceptron training - FROM SCRATCH.
+# IRIS DATASET - ADAptive LInear NEuron aka ADALINE from scratch.
 
 ## Features
-- Train on two classes Iris-setosa & Iris-versicolor
-- Two features - sepal length & petal length only.
+- We use OvA approach.
+- Binary classification.
 
 ## Installation
 ```bash
-git clone https://github.com/kagehisa4/Neural_Networks/perceptrons
-cd iris
+git clone https://github.com/kagehisa4/Neural_Networks/adaline
 python train.py
 ```
 After running installation, the code will train net on two classes - IRIS-SETOSA & IRIS-VERSICOLOR.
