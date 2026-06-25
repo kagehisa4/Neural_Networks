@@ -4,6 +4,16 @@
 - We use OvA approach.
 - Binary classification.
 
+## Adaline learning Rule
+- Also known as the Widrow-Hoff Rule or the Delta Rule.
+
+-                 ![](delta_rule.png)
+
+This is cost function J(w) which is equal to the sum of the squared errors between predicted and true o/p labels.
+
+- Weights are updated exhaustively this rule - ∆w = Ƞ * ∆ J
+- ∆ J = .5 * (yi – Ø(zi)) * xi
+
 ## Installation
 ```bash
 git clone https://github.com/kagehisa4/Neural_Networks/adaline
